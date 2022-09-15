@@ -19,7 +19,7 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1")) 
         {
             GameObject bulletObject = Instantiate (bulletPrefab);
-            bulletObject.transform.position = new Vector3(position.x, position.y, 0);
+            bulletObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }
 }

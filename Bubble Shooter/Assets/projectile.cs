@@ -5,23 +5,26 @@ using UnityEngine;
 public class projectile : MonoBehaviour
 {
     public float speed = 8f;
+    public GameObject bubble;
+    public GameObject enemy;
+    
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        transform.position -= transform.forward * speed * Time.deltaTime;
-
+        bubble.transform.position -= bubble.transform.forward * speed * Time.deltaTime;
+        
     }
 
-    // void OnCollisionEnter(Collision col){
-    //     if (col.gameObject.tag == "Bubble"){
-    //         // a rigidbody tagged as "Ball" hit the player
-    //         Debug.Log("Hit");
-    //     }
+    //float code
+    public void OnTriggerEnter(Collider other) {
+        speed = 0;
+        bubble.transform.position = new Vector3(enemy.transform.position.x, enemy.transform.position.y, enemy.transform.position.z);
+        transform.localScale = new Vector3(4f, 4f, 4f);
+        
+    }
 }

@@ -16,5 +16,13 @@ public class projectile : MonoBehaviour
     void Update()
     {
         transform.position -= transform.forward * speed * Time.deltaTime;
+
     }
+
+    void OnCollisionEnter(Collision col){
+        if (col.gameObject.tag == "Bubble"){
+            // a rigidbody tagged as "Ball" hit the player
+            Debug.Log("Hit");
+        }
+ }
 }

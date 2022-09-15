@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shoot : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     public GameObject bulletPrefab;
 

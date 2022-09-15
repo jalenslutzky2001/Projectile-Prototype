@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736ca0b25a4c649419a06168f447b204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  bulletPrefab: {fileID: 3131466931792218182}
+  shootSpeed: 300
 --- !u!54 &3131466931792218182
 Rigidbody:
   m_ObjectHideFlags: 0

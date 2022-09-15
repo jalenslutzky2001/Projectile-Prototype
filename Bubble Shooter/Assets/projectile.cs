@@ -19,10 +19,9 @@ public class projectile : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision col){
-        if (col.gameObject.tag == "Bubble"){
-            // a rigidbody tagged as "Ball" hit the player
-            Debug.Log("Hit");
-        }
- }
+    // void OnCollisionEnter(Collision col){
+    //     if (col.gameObject.tag == "Bubble"){
+    //         // a rigidbody tagged as "Ball" hit the player
+    //         Debug.Log("Hit");
+    //     }
 }

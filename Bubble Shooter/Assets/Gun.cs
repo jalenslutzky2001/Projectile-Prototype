@@ -6,6 +6,7 @@ public class Gun : MonoBehaviour
 {
     
     public GameObject bulletPrefab;
+    public Transform m_SpawnTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1")) 
         {
-            GameObject bulletObject = Instantiate (bulletPrefab);
+            GameObject bulletObject = Instantiate (bulletPrefab, m_SpawnTransform.position, m_SpawnTransform.rotation);
             bulletObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
     }

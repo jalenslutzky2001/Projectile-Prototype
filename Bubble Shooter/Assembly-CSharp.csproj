@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Movement.cs" />
-     <Compile Include="Assets\projectile.cs" />
-     <Compile Include="Assets\Gun.cs" />
-     <Compile Include="Assets\Floater.cs" />
+     <Compile Include="Assets\Script\Movement.cs" />
+     <Compile Include="Assets\Script\projectile.cs" />
+     <Compile Include="Assets\Script\Gun.cs" />
+     <Compile Include="Assets\Script\Floater.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

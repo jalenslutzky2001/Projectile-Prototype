@@ -23,7 +23,7 @@ public class projectile : MonoBehaviour
     //float code
     public void OnTriggerEnter(Collider other) {
         speed = 0;
-        bubble.transform.position = new Vector3(enemy.transform.position.x, enemy.transform.position.y, enemy.transform.position.z);
+        bubble.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         transform.localScale = new Vector3(4f, 4f, 4f);
         
     }
